@@ -86,7 +86,7 @@
             form.addEventListener('submit', e => {
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
+                .then(response => window.location.href="https://www.facebook.com/groups/492178008551360/permalink/756421265460365/?app=fbl")
                 .catch(error => console.error('Error!', error.message))
             })
           </script>
